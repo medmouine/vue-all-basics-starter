@@ -1,5 +1,6 @@
 export default {
     isLoggedIn: state => !!state.token && !!state.user,
     authStatus: state => state.status,
-    user: state => state.user
+    user: state => state.user,
+    userToker: state => state.token
 };

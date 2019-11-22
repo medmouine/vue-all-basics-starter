@@ -9,6 +9,7 @@ import Maps from "../pages/Examples/Maps.vue";
 import Notifications from "../pages/Examples/Notifications.vue";
 import UpgradeToPRO from "../pages/Examples/UpgradeToPRO.vue";
 import Home from "../pages/Home.vue";
+import Login from "../pages/login/Login.vue";
 
 const routes = [
   {
@@ -61,54 +62,9 @@ const routes = [
     ]
   },
   {
-    path: "/examples",
-    component: DashboardLayout,
-    redirect: "/examples/dashboard",
-    children: [
-      {
-        path: "/examples/dashboard",
-        name: "Dashboard",
-        component: Dashboard
-      },
-      {
-        path: "/examples/user",
-        name: "User Profile",
-        component: UserProfile
-      },
-      {
-        path: "/examples/table",
-        name: "Table List",
-        component: TableList
-      },
-      {
-        path: "/examples/typography",
-        name: "Typography",
-        component: Typography
-      },
-      {
-        path: "/examples/icons",
-        name: "Icons",
-        component: Icons
-      },
-      {
-        path: "/examples/maps",
-        name: "Maps",
-        meta: {
-          hideFooter: true
-        },
-        component: Maps
-      },
-      {
-        path: "/examples/notifications",
-        name: "Notifications",
-        component: Notifications
-      },
-      {
-        path: "/examples/upgrade",
-        name: "Upgrade to PRO",
-        component: UpgradeToPRO
-      }
-    ]
+    path: "/login",
+    name: "Login",
+    component: Login
   }
 ];
 
