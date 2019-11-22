@@ -15,6 +15,5 @@ RUN npm run build
 FROM scratch AS ui
 COPY --from=build /usr/app/dist /usr/app
 
-
 FROM socialengine/nginx-spa
 COPY --from=ui /usr/app /app
